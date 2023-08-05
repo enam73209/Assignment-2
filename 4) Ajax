@@ -1,0 +1,15 @@
+<htm>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let url = "https://jsonplaceholder.typicode.com/posts";
+            let RequestOption={method:'GET'};
+            fetch(url,RequestOption)
+            .then(response => response.json())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+        </script>
+    </body>
+</htm>
